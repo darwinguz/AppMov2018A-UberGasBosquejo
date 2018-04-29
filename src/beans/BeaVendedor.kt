@@ -1,16 +1,16 @@
 package beans
 
-class Vendedor(
+class BeaVendedor(
         id: Int,
         nombre: String,
         apellido: String,
         telefono: String,
         email: String,
         estado: Int,
-        usuario: Usuario,
+        usuario: BeaUsuario,
         var cedula: String,
         var ubicacion: String,
-        var distribuidor: Distribuidor
-) : Persona(id, nombre, apellido, telefono, email, estado, usuario) {
+        var distribuidor: BeaDistribuidor
+) : BeaPersona(id, nombre, apellido, telefono, email, estado, usuario) {
 
 }

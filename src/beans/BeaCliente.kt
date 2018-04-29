@@ -1,14 +1,14 @@
 package beans
 
-class Cliente(
+class BeaCliente(
         id: Int,
         nombre: String,
         apellido: String,
         telefono: String,
         email: String,
         estado: Int,
-        usuario: Usuario,
+        usuario: BeaUsuario?,
         var tipo: String
-) : Persona(id, nombre, apellido, telefono, email, estado, usuario) {
+) : BeaPersona(id, nombre, apellido, telefono, email, estado, usuario) {
 
 }

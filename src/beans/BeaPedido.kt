@@ -3,23 +3,16 @@ package beans
 import java.math.BigDecimal
 import java.time.LocalDateTime
 
-class Pedido(
+class BeaPedido(
         var id: Int,
-        var cliente: Cliente,
-        var vendedor: Vendedor,
+        var cliente: BeaCliente,
+        var vendedor: BeaVendedor?,
         var fechaHora: LocalDateTime,
         var cantidad: Int,
-        var tipoPago: String,
         var precioTotal: BigDecimal,
+        var formaPago: String,
         var ubicacion: String,
         var estado: Int
 ) {
 
-    fun pagar() {
-        estado = 1;
-    }
-
-    fun cancelar() {
-        estado = -1;
-    }
 }

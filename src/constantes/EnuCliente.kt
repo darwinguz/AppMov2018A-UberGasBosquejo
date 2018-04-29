@@ -1,4 +1,4 @@
-package Constantes
+package constantes
 
 enum class EnuCliente(val nombre: String, val valor: Int) {
     TIPO_MAYORISTA("Mayorista", 1),

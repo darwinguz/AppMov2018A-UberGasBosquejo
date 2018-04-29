@@ -3,7 +3,7 @@ package beans
 import java.math.BigDecimal
 import java.time.LocalDateTime
 
-class Gas(
+class BeaGas(
         var id: Int,
         var descripcion: String,
         var saldo: Int,
@@ -11,7 +11,7 @@ class Gas(
         var precioCompra: BigDecimal,
         var ultimaActualizacion: LocalDateTime,
         var estado: Int,
-        var distribuidor: Distribuidor
+        var distribuidor: BeaDistribuidor
 ) {
 
 }
